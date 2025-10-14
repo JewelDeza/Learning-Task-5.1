@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Art Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f5f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .art {
+      width: 200px;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 6px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>SVG Art</h1>
+  <div class="gallery">
+
+    <!-- 1. Line and Circle -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#ffeaea" />
+          <circle cx="60" cy="100" r="35" fill="#00b3a6" />
+          <circle cx="60" cy="100" r="20" fill="#fff" />
+          <circle cx="150" cy="200" r="25" fill="#ff7b7b" />
+          <line x1="10" y1="250" x2="190" y2="50" stroke="#ffb86b" stroke-width="4" />
+        </svg>
+      </div>
+      <figcaption>1. Line and Circle</figcaption>
+    </figure>
+
+    <!-- 2. Circle and Rectangle -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#00b3a6" />
+          <rect x="20" y="30" width="160" height="60" rx="10" fill="#ffdede" />
+          <rect x="20" y="120" width="160" height="60" rx="10" fill="#ffb86b" />
+          <rect x="20" y="210" width="160" height="60" rx="10" fill="#fff3db" />
+          <circle cx="100" cy="60" r="15" fill="#ff7b7b" />
+          <circle cx="100" cy="150" r="15" fill="#fff" />
+          <circle cx="100" cy="240" r="15" fill="#ff7b7b" />
+        </svg>
+      </div>
+      <figcaption>2. Circle and Rectangle</figcaption>
+    </figure>
+
+    <!-- 3. Polyline and Circle -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#fff3db" />
+          <polyline points="10,100 50,60 90,100 130,60 170,100" stroke="#ff7b7b" stroke-width="10" fill="none" />
+          <polyline points="10,200 50,160 90,200 130,160 170,200" stroke="#00b3a6" stroke-width="10" fill="none" />
+          <circle cx="100" cy="150" r="20" fill="#ffb86b" />
+        </svg>
+      </div>
+      <figcaption>3. Polyline and Circle</figcaption>
+    </figure>
+
+    <!-- 4. Polygon and Ellipse -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#e8f7ff" />
+          <polygon points="20,100 100,40 180,100 100,160" fill="#ff7b7b" />
+          <polygon points="20,200 100,140 180,200 100,260" fill="#00b3a6" />
+          <ellipse cx="100" cy="150" rx="25" ry="35" fill="#fff3db" />
+        </svg>
+      </div>
+      <figcaption>4. Polygon and Ellipse</figcaption>
+    </figure>
+
+    <!-- 5. Circle, Line, and Rectangle -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#ffeef9" />
+          <rect x="30" y="50" width="20" height="200" fill="#00b3a6" />
+          <rect x="70" y="50" width="20" height="200" fill="#ff7b7b" />
+          <rect x="110" y="50" width="20" height="200" fill="#ffb86b" />
+          <line x1="20" y1="260" x2="180" y2="260" stroke="#00b3a6" stroke-width="4" />
+          <circle cx="60" cy="40" r="10" fill="#ff7b7b" />
+          <circle cx="100" cy="40" r="10" fill="#ffb86b" />
+          <circle cx="140" cy="40" r="10" fill="#00b3a6" />
+        </svg>
+      </div>
+      <figcaption>5. Circle, Line, and Rectangle</figcaption>
+    </figure>
+
+    <!-- 6. Polyline and Polygon -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#f4fff2" />
+          <polyline points="10,50 60,20 110,50 160,20 190,50" stroke="#ff7b7b" stroke-width="8" fill="none" />
+          <polygon points="50,200 100,150 150,200 100,250" fill="#00b3a6" />
+        </svg>
+      </div>
+      <figcaption>6. Polyline and Polygon</figcaption>
+    </figure>
+
+    <!-- 7. Circle, Rectangle, Polyline, Polygon, and Ellipse -->
+    <figure>
+      <div class="art">
+        <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+          <rect width="200" height="300" fill="#ffdede" />
+          <rect x="20" y="30" width="160" height="60" fill="#fff3db" />
+          <circle cx="100" cy="150" r="25" fill="#00b3a6" />
+          <polyline points="20,200 60,170 100,200 140,170 180,200" stroke="#ffb86b" stroke-width="8" fill="none" />
+          <polygon points="60,230 100,270 140,230" fill="#ff7b7b" />
+          <ellipse cx="100" cy="120" rx="40" ry="20" fill="#ffb86b" opacity="0.6" />
+        </svg>
+      </div>
+      <figcaption>7. Combined Shapes</figcaption>
+    </figure>
+
+  </div>
+</body>
+</html>
