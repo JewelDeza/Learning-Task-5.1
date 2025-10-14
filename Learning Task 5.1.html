@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>7 SVG Graphics</title>
+  <style>
+    :root{--gap:18px;--card-w:200px;--card-h:300px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;display:flex;flex-direction:column;align-items:center;padding:28px;background:#faf7f5;color:#222}
+    h1{font-size:18px;margin:0 0 14px}
+    .gallery{display:flex;gap:var(--gap);flex-wrap:wrap;justify-content:center}
+    .card{width:var(--card-w);height:var(--card-h);box-shadow:0 6px 18px rgba(20,20,20,0.08);border-radius:10px;overflow:hidden;border:6px solid #fff}
+    .label{font-size:12px;text-align:center;margin-top:8px}
+    
+    svg{display:block;width:100%;height:100%}
+  </style>
+</head>
+<body>
+  <h1>7 Unique SVG Graphics</h1>
+  <div class="gallery">
+    
+    <figure class="card" title="Line + Circle">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Line and Circle artwork">
+        <rect width="200" height="300" fill="#ffdede"/>
+        
+        <g transform="translate(60,90)">
+          <circle cx="0" cy="0" r="36" fill="#00b3a6" opacity="0.95"/>
+          <circle cx="0" cy="0" r="22" fill="#fff"/>
+          <circle cx="0" cy="0" r="10" fill="#ff7b7b"/>
+        </g>
+        <g transform="translate(150,210)">
+          <circle cx="0" cy="0" r="28" fill="#ffb86b"/>
+          <circle cx="0" cy="0" r="10" fill="#fff"/>
+        </g>
+        
+        <g stroke="#ff7b7b" stroke-width="6" stroke-linecap="round">
+          <line x1="-20" y1="0" x2="120" y2="200" transform="translate(20,20) rotate(-12 60 100)" opacity="0.95"/>
+          <line x1="30" y1="-30" x2="30" y2="330" stroke-width="2" stroke="#ff7b7b" opacity="0.5"/>
+        </g>
+        
+        <line x1="10" y1="270" x2="190" y2="270" stroke="#00b3a6" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <figcaption class="label">1. Line & Circle</figcaption>
+    </figure>
+
+    
+    <figure class="card" title="Circle + Rectangle">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circle and Rectangle artwork">
+        <rect width="200" height="300" fill="#00b3a6"/>
+        
+        <g transform="translate(18,24)">
+          <rect x="0" y="0" width="164" height="70" rx="8" fill="#ffdede"/>
+          <rect x="0" y="86" width="164" height="70" rx="8" fill="#ffb86b"/>
+          <rect x="0" y="172" width="164" height="112" rx="8" fill="#ff7b7b"/>
+        </g>
+        
+        <g fill="#00b3a6" opacity="0.95">
+          <circle cx="38" cy="35" r="10"/>
+          <circle cx="82" cy="35" r="10"/>
+          <circle cx="126" cy="35" r="10"/>
+
+          <circle cx="38" cy="120" r="10"/>
+          <circle cx="82" cy="120" r="10"/>
+          <circle cx="126" cy="120" r="10"/>
+
+          <circle cx="38" cy="210" r="12"/>
+          <circle cx="82" cy="210" r="12"/>
+          <circle cx="126" cy="210" r="12"/>
+        </g>
+      </svg>
+      <figcaption class="label">2. Circle & Rectangle</figcaption>
+    </figure>
+
+    
+    <figure class="card" title="Polyline + Circle">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Polyline and Circle artwork">
+        <rect width="200" height="300" fill="#fff3db"/>
+        
+        <polyline points="10,70 40,40 70,70 100,40 130,70 160,40 190,70"
+                  fill="none" stroke="#ff7b7b" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+        <polyline points="10,170 40,140 70,170 100,140 130,170 160,140 190,170"
+                  fill="none" stroke="#00b3a6" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+        
+        <g fill="#ffb86b">
+          <circle cx="45" cy="105" r="16"/>
+          <circle cx="95" cy="105" r="12"/>
+          <circle cx="145" cy="105" r="16"/>
+        </g>
+        
+        <g fill="#ff7b7b" opacity="0.9">
+          <circle cx="28" cy="250" r="8"/>
+          <circle cx="172" cy="24" r="6"/>
+        </g>
+      </svg>
+      <figcaption class="label">3. Polyline & Circle</figcaption>
+    </figure>
+
+    
+    <figure class="card" title="Polygon + Ellipse">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Polygon and Ellipse artwork">
+        <rect width="200" height="300" fill="#e8f7ff"/>
+        
+        <polygon points="0,60 30,30 70,30 100,60 70,90 30,90" transform="translate(20,12)" fill="#ffb86b"/>
+        <polygon points="0,120 30,90 70,90 100,120 70,150 30,150" transform="translate(20,12)" fill="#ff7b7b"/>
+        <polygon points="0,180 30,150 70,150 100,180 70,210 30,210" transform="translate(20,12)" fill="#00b3a6"/>
+        
+        <g transform="translate(105,150)" fill="#fff3db">
+          <ellipse cx="0" cy="-10" rx="22" ry="34"/>
+          <ellipse cx="0" cy="36" rx="16" ry="30"/>
+        </g>
+        
+        <g fill="#ffdede" opacity="0.9">
+          <circle cx="170" cy="40" r="6"/>
+          <circle cx="180" cy="80" r="4"/>
+          <circle cx="150" cy="220" r="5"/>
+        </g>
+      </svg>
+      <figcaption class="label">4. Polygon & Ellipse</figcaption>
+    </figure>
+
+    
+    <figure class="card" title="Circle + Line + Rectangle">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Circle, Line and Rectangle artwork">
+        <rect width="200" height="300" fill="#ffeef9"/>
+        
+        <g transform="translate(26,40)" fill="#00b3a6">
+          <rect x="0" y="0" width="18" height="220" rx="4"/>
+          <rect x="32" y="0" width="18" height="220" rx="4"/>
+          <rect x="64" y="0" width="18" height="220" rx="4"/>
+          <rect x="96" y="0" width="18" height="220" rx="4"/>
+          <rect x="128" y="0" width="18" height="220" rx="4"/>
+        </g>
+        
+        <g transform="translate(35,22)" fill="#ff7b7b">
+          <circle cx="0" cy="0" r="10"/>
+          <circle cx="32" cy="0" r="10"/>
+          <circle cx="64" cy="0" r="10"/>
+          <circle cx="96" cy="0" r="10"/>
+          <circle cx="128" cy="0" r="10"/>
+        </g>
+        
+        <g stroke="#ffb86b" stroke-width="3" stroke-linecap="round">
+          <line x1="12" y1="260" x2="188" y2="260"/>
+        </g>
+      </svg>
+      <figcaption class="label">5. Circle, Line & Rectangle</figcaption>
+    </figure>
+
+    
+    <figure class="card" title="Polyline + Polygon">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Polyline and Polygon artwork">
+        <rect width="200" height="300" fill="#f4fff2"/>
+        
+        <polyline points="12,20 88,20 156,90 156,210 88,280 12,280 12,20" fill="none" stroke="#ff7b7b" stroke-width="12" stroke-linejoin="round"/>
+        
+        <g transform="translate(20,36)">
+          <polygon points="0,0 60,0 90,36 60,72 0,72" fill="#00b3a6"/>
+          <polygon points="96,0 156,0 186,36 156,72 96,72" fill="#ffdede"/>
+          <polygon points="48,84 108,84 138,120 108,156 48,156" fill="#ffb86b"/>
+        </g>
+      </svg>
+      <figcaption class="label">6. Polyline & Polygon</figcaption>
+    </figure>
+
+    
+    <figure class="card" title="All shapes combined">
+      <svg viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Multiple shapes artwork">
+        <rect width="200" height="300" fill="#ffdede"/>
+        
+        <g stroke="#ff7b7b" stroke-width="2" fill="#00b3a6" transform="translate(30,18)">
+          <line x1="10" y1="0" x2="10" y2="60" stroke="#ff7b7b"/>
+          <circle cx="10" cy="82" r="16"/>
+          <line x1="60" y1="0" x2="60" y2="60" stroke="#ff7b7b"/>
+          <circle cx="60" cy="82" r="12"/>
+          <line x1="110" y1="0" x2="110" y2="60" stroke="#ff7b7b"/>
+          <circle cx="110" cy="82" r="20"/>
+        </g>
+        
+        <polyline points="10,200 40,170 70,200 100,170 130,200 160,170 190,200" fill="none" stroke="#ffb86b" stroke-width="10" stroke-linecap="round"/>
+        <g transform="translate(20,220)" fill="#00b3a6">
+          <polygon points="0,0 16,0 24,12 16,24 0,24"/>
+          <polygon points="36,0 52,0 60,12 52,24 36,24"/>
+          <polygon points="72,0 88,0 96,12 88,24 72,24"/>
+        </g>
+        >
+        <ellipse cx="140" cy="165" rx="24" ry="40" fill="#fff"/>
+
+      </svg>
+      <figcaption class="label">7. Circle + Rectangle + Polyline + Polygon + Ellipse</figcaption>
+    </figure>
+
+  </div>
+
+</body>
+</html>
